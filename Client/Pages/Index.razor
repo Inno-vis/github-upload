@@ -1,0 +1,298 @@
+@page "/"
+@using Microsoft.AspNetCore.SignalR.Client
+@using OrganizedCrimeApp.Shared.Library
+@using System.Web
+@using System.Threading
+@inject NavigationManager NavigationManager
+@inject IJSRuntime js;
+@implements IDisposable
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+
+<div class="container-fluid">
+  <div class="row text-center"><h3>@labelGameState</h3></div>
+  
+<div class="row">
+  <div class="col-6 col-sm-4 links bg-secondary text-white p-5 border border-white rounded">
+    
+    <hr>
+     
+        @if (isIntroductionRound)
+    {
+      <button type="button" class="btn btn-dark btn-block" @onclick="Advance" disabled="@(!IsConnected)">@labelAdvanceButton</button>
+    } else if(isGameOverCiviliansWin
+      || isGameOverMafiaWins
+    ||isLobbyTime)
+    {
+      <button type="button" class="btn btn-danger btn-lg" @onclick="Start" disabled="@(!IsConnected)">Start Game</button>
+    }
+    else if (!isLobbyTime)
+    {
+      @if (!isIntroductionRound && isActivePlayer)
+      {
+
+          <div class="form-group">  
+        
+         
+            <p>You want to @labelTargetAction</p>
+
+            @foreach (var t in possibleTargets)
+            { 
+              <div class="form-group row">
+              <label>
+                <input class="form-control" name="targetName" type="radio" @onchange="@(() => { @inputTargetedPerson = @t; })">
+                @t
+              </label>
+               </div>
+            }
+  
+        
+        <button type="button" class="btn btn-dark btn-block" @onclick="Advance" disabled="@(!IsConnected)">@labelAdvanceButton</button>
+         </div>
+
+      }
+    }
+   
+  </div>
+
+  <div class="col-6 col-sm-4 midden text-secondary p-5 border border-secondary rounded">
+    <ul id="messagesList">
+      @foreach (var message in messages)
+      {
+        <li>@message</li>
+      }
+    </ul>
+  </div>
+
+  <div class="col-6 col-sm-4 rechts bg-secondary text-white p-5 border border-white rounded">
+   
+      @if (gameState == GameState.Lobby.ToString())
+      {
+        <div class="form-group">
+          <label>
+            Naam:
+            <input class="form-control" @bind="userInput" />
+          </label>
+        </div>
+      }
+      else
+      {
+        
+        <p>@userInput</p>
+      }
+
+      <div class="form-group">
+        <label>
+          Bericht:
+          <input class="form-control" @bind="messageInput" size="50" />
+        </label>
+      </div>
+      <button  type="button" class="btn btn-dark" @onclick="Send" disabled="@(!IsConnected)">Send</button>
+    
+  </div>
+</div>
+<div>
+  @if (isNightMafiaTime)
+  {
+    <audio autoplay>
+      <source src="@srcSoundMafia" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  }
+  else if (isNightSherrifTime)
+  {
+    <audio autoplay>
+      <source src="@srcSoundSherrif" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  }
+  else if (isNightDoctorTime)
+  {
+    <audio autoplay>
+      <source src="@srcSoundDoctor" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  }
+  else if (isDayTime)
+  {
+    <audio autoplay>
+      <source src="@srcSoundEverybody" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  }
+</div>
+<hr>
+</div>
+
+@code {
+  private HubConnection hubConnection;
+  private List<string> messages = new List<string>();
+  private string userInput;
+  private string messageInput;
+  private string inputTargetedPerson = string.Empty;
+  private string labelTargetAction = "StartFirstNight";
+  private string labelAdvanceButton = "Go To Sleep";
+  private List<string> possibleTargets = new List<string>();
+  private string gameState = GameState.Lobby.ToString();
+  private string labelGameState = string.Empty;
+  private List<string> activePlayers = new List<string>();
+  private bool isActivePlayer = false;
+  private string labelCountdown = string.Empty;
+  private string srcSoundMafia = "/sounds/MafiaWakeUp.wav";
+  private string srcSoundDoctor = "/sounds/DoctorWakeUp.wav";
+  private string srcSoundSherrif = "/sounds/SherrifWakeUp.wav";
+  private string srcSoundEverybody = "/sounds/EverybodyWakeUp.wav";
+  private bool isNightMafiaTime => gameState == GameState.NightMafia.ToString();
+  private bool isDayTime => gameState == GameState.Day.ToString();
+  private bool isNightDoctorTime => gameState == GameState.NightDoctor.ToString();
+  private bool isNightSherrifTime => gameState == GameState.NightSherrif.ToString();
+  private bool isLobbyTime => gameState == GameState.Lobby.ToString();
+  private bool isGameOverCiviliansWin => gameState == GameState.GameOverCiviliansWin.ToString();
+  private bool isGameOverMafiaWins => gameState == GameState.GameOverMafiaWins.ToString();
+  private bool isIntroductionRound => gameState == GameState.IntroductionRound.ToString();
+
+  protected override async Task OnInitializedAsync()
+  {
+    hubConnection = new HubConnectionBuilder()
+      .WithUrl(NavigationManager.ToAbsoluteUri("/chathub"))
+    .Build();
+
+    UpdateLabelGameState();
+
+    hubConnection.On<string>(AsyncMethod.Msg_RECEIVE, (message) =>
+    {
+      messages.Insert(0, message);
+      StateHasChanged();
+    });
+
+    @* hubConnection.On(AsyncMethod.Sound_PLAY, () =>
+      {
+      StateHasChanged();
+      }); *@
+
+
+    hubConnection.On<string>(AsyncMethod.Log_CONSOLE, (message) =>
+      {
+      Log(message);
+      // StateHasChanged();
+    });
+
+    hubConnection.On<string, List<string>, List<string>>(AsyncMethod.Game_LOAD, (newGameState,
+      targetList, activePlayerList) =>
+    {
+      activePlayers = activePlayerList;
+      var thisPlayerId = hubConnection.ConnectionId;
+
+      isActivePlayer = activePlayers.Contains(thisPlayerId); // refactor?
+
+      gameState = newGameState;
+
+      UpdateLabelGameState();
+      possibleTargets = targetList;
+
+      if (isDayTime)
+      {
+        labelTargetAction = "kick out of town";
+      }
+      else
+      if (isNightMafiaTime)
+      {
+        labelTargetAction = "kill: ";
+      }
+      else
+      if (isNightDoctorTime)
+      {
+        labelTargetAction = "save: ";
+
+      }
+      else
+      if (isNightSherrifTime)
+      {
+        labelTargetAction = "spy on: ";
+      }
+      else
+      if (isIntroductionRound)
+      {
+        labelAdvanceButton = "The First Night...";
+      }
+      else
+      {
+        labelTargetAction = "No action available";
+      }
+
+      StateHasChanged();
+    });
+
+    await hubConnection.StartAsync();
+  }
+
+  Task Send() =>
+    hubConnection.SendAsync(AsyncMethod.Msg_SEND, userInput, messageInput);
+
+  Task Start() => hubConnection.InvokeAsync(AsyncMethod.Game_START);
+
+  Task Advance() => hubConnection.InvokeAsync(AsyncMethod.Game_ADVANCE, inputTargetedPerson, labelTargetAction);
+
+  public bool IsConnected =>
+    hubConnection.State == HubConnectionState.Connected;
+
+  public void Dispose()
+  {
+    _ = hubConnection.DisposeAsync();
+  }
+
+  public void UpdateLabelGameState()
+  {
+    if (isDayTime)
+    {
+      labelGameState = "Day Time - City Hall Meeting";
+      labelAdvanceButton = "Confirm Vote & Close Eyes";
+    }
+    else if (isNightDoctorTime)
+    {
+      labelGameState = "Night Time - The Doctor is on call";
+      labelAdvanceButton = "Rescue";
+    }
+    else if (isNightMafiaTime)
+    {
+      labelGameState = "Night Time - Crime Time";
+      labelAdvanceButton = "Attack";
+    }
+    else if (isNightSherrifTime)
+    {
+      labelGameState = "Night Time - Sherrif is on duty";
+
+      labelAdvanceButton = "Spy";
+
+    }
+    else if (isLobbyTime)
+    {
+      messages.Clear();
+      labelGameState = "Click Start once everyone has joined";
+    }
+    else if (isIntroductionRound)
+    {
+      labelGameState = "Day Time - First City Hall Meeting";
+    }
+    else if (isGameOverCiviliansWin)
+    {
+      labelGameState = "Game OVER - The Civilians Win";
+
+
+    }
+    else if (isGameOverMafiaWins)
+    {
+      labelGameState = "GAME OVER - The Mafia Wins";
+
+    }
+    else
+    {
+      labelGameState = "unexpected GameState";
+    }
+  }
+
+  public void Log(string message)
+  {
+    Console.WriteLine(message);
+  }
+}

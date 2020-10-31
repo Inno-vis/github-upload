@@ -1,0 +1,43 @@
+@using System.Globalization
+@inherits InputBase<string>
+@using OrganizedCrimeApp.Shared.Library
+<EditForm>
+  @foreach (var player in Players)
+          {
+            <label>
+              <input type="radio" name="inputTargetedPlayer" SelectedValue="player" @bind-value="targetedPlayer"
+          checked="@(SelectedValue.Equals(Value))" />
+              @player
+            </label>
+          }
+          <button type="submit">Go</button>
+          <p>You selected @targetedPlayer</p>
+        </EditForm>
+
+        @code{
+  [Parameter]
+  public string SelectedValue { get; set; }
+  [Parameter]
+  public List<string> Players { get; set; }
+  private string targetedPlayer;
+  protected override bool TryParseValueFromString(string value,
+    out string result, out string errorMessage)
+  {
+    var success = BindConverter.TryConvertTo<string>(
+      value, CultureInfo.CurrentCulture, out var parsedValue);
+    if (success)
+    {
+      result = parsedValue;
+      errorMessage = null;
+
+      return true;
+    }
+    else
+    {
+      result = default;
+      errorMessage = $"{FieldIdentifier.FieldName} field isn't valid.";
+
+      return false;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@page "/Play"
+@using OrganizedCrimeApp.Client.Components
+@using OrganizedCrimeApp.Shared.Library
+
+<h1>Hello world</h1>
+
+<Expander Expanded="true">
+  <Chat />
+</Expander>
+
+<button @onclick="StateHasChanged">
+  Call StateHasChanged
+</button>
+
+<Targets SelectedValue="@noOne" Player="@players" />
+
+
+@code{
+  private string noOne = MagicString.NO_ONE;
+  private List<string> players = new List<string> { "Alpha", "Beta", "Gamma", MagicString.NO_ONE };
+}

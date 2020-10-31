@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="/home/carebear/Projects/OrganizedCrimeApp/Client/wwwroot/" />
+  <ContentRoot BasePath="/" Path="/home/carebear/Projects/OrganizedCrimeApp/Client/bin/Release/netstandard2.1/wwwroot/" />
+</StaticWebAssets>

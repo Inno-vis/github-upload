@@ -1,0 +1,234 @@
+{
+  "FilesToCompress": [
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/_cOkDMtCLWEgaNJIEibhLPZPHhpp_QM63HPpTeczqls=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.AspNetCore.Authorization.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Authorization.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/3VlekeJS0O95kymZqK5Pz4tjSWrROxEwWV0DhwOItjw=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.AspNetCore.Components.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Components.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/sL-EhHWDhSWRY1t70Q-qKp3XKv3D6OvahpsEFTBRG-8=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.AspNetCore.Components.Forms.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Components.Forms.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/sfvG33ybIDgWCnmqA2imqEKxrIZXSg6SwrAheiJJhio=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.AspNetCore.Components.Web.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/-jS4BW544dPAU3ACVC2IJxWtZu0ykNChckRp_MkZjYE=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.AspNetCore.Components.WebAssembly.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Components.WebAssembly.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/qSO_zmA0SgA-u2LAxeHtUeayf6-ioEs2ZpwBuxSwNtw=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.AspNetCore.Connections.Abstractions.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Connections.Abstractions.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/8X8DlRjT8SXw-EvHaEieOmm84hflgtXcYyS4a1nnAoo=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.AspNetCore.Http.Connections.Client.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Http.Connections.Client.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/grXmDznQ1JB2qJ00ZYtGqi8sPWv7S0Mz3ZMnH9DXKdA=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.AspNetCore.Http.Connections.Common.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Http.Connections.Common.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/jUmwONbBg5aKhe0F66tUZ45NPjsqOt1rwRoC60juZKA=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.AspNetCore.Http.Features.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Http.Features.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/CHijelu3OJMQ9dsQePyhtY8RrH09X2EjzU063qKHRw0=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.AspNetCore.Metadata.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.Metadata.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/MUmgiAx5ApnimXykSiKi09EtBZAtmaZ7KeOhduKI628=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.AspNetCore.SignalR.Client.Core.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.SignalR.Client.Core.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/gG5-Lfo1gyRHkhUHS6fNz1lTccZ9B2qten99aHuxJBE=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.AspNetCore.SignalR.Client.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.SignalR.Client.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/NT5N8bfnNX6F98oRk_ZhM3isI0UnSfSl-WQyjh7UVYE=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.AspNetCore.SignalR.Common.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.SignalR.Common.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/r6OkF1Dc26G1agyME_s9mnhgKHBF1XuTotFXJbEKTRk=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.AspNetCore.SignalR.Protocols.Json.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/jzHgXWAvWMkKIGFjZoT84tbe72E_H7CvTr-Dryh4QPs=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Bcl.AsyncInterfaces.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Bcl.AsyncInterfaces.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/3xH_NM6XZ8vRQfVg0lyctrGpsYO_n3khpEPhPGTErvo=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Extensions.Configuration.Abstractions.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Configuration.Abstractions.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/C1Fmcu1YwvqhoKRynGyccQa29gkD-RHHNEkG4vWPDik=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Extensions.Configuration.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Configuration.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/3Ruktojl91qehYrtiQliy02Jv_FNIJdUo7io3gJe2H8=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Extensions.Configuration.Json.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Configuration.Json.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/g0f92xuxxJcxtVOh6VKlfhFO6UBQ7et5XjAQBj9QVu4=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/tHgYAYPwJB0M7l1tjxAjwcPSj5cJTpIlF13O2SxWxJo=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Extensions.DependencyInjection.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.DependencyInjection.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/f2eIxVxDHMd_WSB3hIiwDLmQ1E9Vg6L-77x5kOD2AiQ=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Extensions.Logging.Abstractions.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/XW8S698YEbKF-KuNkW43cQIrqnX17UfnAXvhudm_88k=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Extensions.Logging.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Logging.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/Q28JOZsvHiM7MQLwEdeWT888EZuwoMhg40bP6TgWmDI=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Extensions.Options.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Options.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/W-MZU3CfvgsaNFNvrsVOtcn4mSFHD7CnvZh2BVFEH8E=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.Extensions.Primitives.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.Extensions.Primitives.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/3cbvJEo8k8VJVQwyEZWWQ6yGRFQW8-219DaOnmsX3e4=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.JSInterop.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.JSInterop.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/zV-OfJNfNsG404X30Pwkdymdh1KmZpTVEmG-JNFVc-k=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Microsoft.JSInterop.WebAssembly.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/4Sf4XG-kpB2E9fuIWBUnSzE7awjHna148zNHn1fxWOc=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/Mono.Security.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/Mono.Security.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/EAHDZRVt05uYlXB1emb6nJhUFoU46Zzq8nlccv_KzL0=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/mscorlib.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/mscorlib.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/OWQ0ntDGoZrnH1TWeCVreq3aWpBZ3RkexZvrY7D6IoY=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/OrganizedCrimeApp.Client.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/OrganizedCrimeApp.Client.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/bcFj-1NsaH1eNDD20-Six76gQh7_7PCV8ozVNbvq4_A=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/OrganizedCrimeApp.Shared.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/OrganizedCrimeApp.Shared.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/GcOwZYok_4OFUFvMmvkbWH_V6wCEA7y6pAiA_rB1014=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/System.Core.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/System.Core.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/1TCISbvhObHirwikPPbFIONmqCOMlzb7R8Kwzqo8uNg=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/System.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/System.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/fKqiY3uwuO98XdDvWrNLpK9oGPxhXryAX7HZuxXGJLU=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/System.IO.Pipelines.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/System.IO.Pipelines.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/yecBdek5OB3DKQL_4th_HPpaki_stbz2La2_JlFtiMk=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/System.Net.Http.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/System.Net.Http.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/xBz2KZPHBccB7_38RPJJTSyPNPXG3tJFn-jwfF8bDd0=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/System.Net.Http.WebAssemblyHttpHandler.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/System.Net.Http.WebAssemblyHttpHandler.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/ZArjgv2_GVIwwSuBgDxVhThkoZCU8Z4ZJ6fyWSYg0jE=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/System.Runtime.CompilerServices.Unsafe.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/System.Runtime.CompilerServices.Unsafe.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/YTMb0A8ep1S3C5Fxa8BLJV1Xn5AoVik-TC97zLstZDo=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/System.Text.Encodings.Web.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/System.Text.Encodings.Web.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/vRmgrbsB-QSyAb3bE5RBBIxago11Qs__kq7amBk9xho=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/System.Text.Json.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/System.Text.Json.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/TECPZnGkyxX6SB9OrReWZu7P4poGrwMkmXJWxwC7JzU=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/System.Threading.Channels.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/System.Threading.Channels.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/Fxa4AoM_8OvSfa2Slotny86ArCbqQ1F7VGeT6vCeVTo=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/WebAssembly.Bindings.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/WebAssembly.Bindings.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/zZqYoLEQabFhrjOzlwDh9eHmQiZBtDH7ME9TJERdQ-I=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/linker\/WebAssembly.Net.WebSockets.dll",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/_bin\/WebAssembly.Net.WebSockets.dll.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=.hash",
+      "Source": "\/home\/carebear\/.nuget\/packages\/microsoft.aspnetcore.components.webassembly.runtime\/3.2.0\/tools\/dotnetwasm\/wasm\/dotnet.3.2.0.js",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/wasm\/dotnet.3.2.0.js.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=.hash",
+      "Source": "\/home\/carebear\/.nuget\/packages\/microsoft.aspnetcore.components.webassembly.runtime\/3.2.0\/tools\/dotnetwasm\/wasm\/dotnet.timezones.dat",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/wasm\/dotnet.timezones.dat.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/UC-3Rm1NkdNdlIrzYARo_dO-HDlS5mhPxo0IQv7kma8=.hash",
+      "Source": "\/home\/carebear\/.nuget\/packages\/microsoft.aspnetcore.components.webassembly.runtime\/3.2.0\/tools\/dotnetwasm\/wasm\/dotnet.wasm",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/wasm\/dotnet.wasm.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/SPHS1EAPAcMFN4TEIUYl3FWtoCQTsNJch0XVGgok1eE=.hash",
+      "Source": "\/home\/carebear\/.nuget\/packages\/microsoft.aspnetcore.components.webassembly.build\/3.2.1\/tools\/blazor\/blazor.webassembly.js",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/blazor.webassembly.js.br"
+    },
+    {
+      "InputSource": "obj\/Release\/netstandard2.1\/integrity\/WSS5wig4MLs2bqTwN_uMI5e0wDejnkLog1tGnFxOJqw=.hash",
+      "Source": "\/home\/carebear\/Projects\/OrganizedCrimeApp\/Client\/obj\/Release\/netstandard2.1\/blazor\/blazor.boot.json",
+      "Target": "obj\/Release\/netstandard2.1\/compressed\/_framework\/blazor.boot.json.br"
+    }
+  ]
+}

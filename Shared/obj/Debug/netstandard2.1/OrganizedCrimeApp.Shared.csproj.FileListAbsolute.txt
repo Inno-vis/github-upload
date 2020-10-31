@@ -1,0 +1,9 @@
+/home/carebear/Projects/OrganizedCrimeApp/Shared/bin/Debug/netstandard2.1/OrganizedCrimeApp.Shared.deps.json
+/home/carebear/Projects/OrganizedCrimeApp/Shared/bin/Debug/netstandard2.1/OrganizedCrimeApp.Shared.dll
+/home/carebear/Projects/OrganizedCrimeApp/Shared/bin/Debug/netstandard2.1/OrganizedCrimeApp.Shared.pdb
+/home/carebear/Projects/OrganizedCrimeApp/Shared/obj/Debug/netstandard2.1/OrganizedCrimeApp.Shared.csprojAssemblyReference.cache
+/home/carebear/Projects/OrganizedCrimeApp/Shared/obj/Debug/netstandard2.1/OrganizedCrimeApp.Shared.AssemblyInfoInputs.cache
+/home/carebear/Projects/OrganizedCrimeApp/Shared/obj/Debug/netstandard2.1/OrganizedCrimeApp.Shared.AssemblyInfo.cs
+/home/carebear/Projects/OrganizedCrimeApp/Shared/obj/Debug/netstandard2.1/OrganizedCrimeApp.Shared.csproj.CoreCompileInputs.cache
+/home/carebear/Projects/OrganizedCrimeApp/Shared/obj/Debug/netstandard2.1/OrganizedCrimeApp.Shared.dll
+/home/carebear/Projects/OrganizedCrimeApp/Shared/obj/Debug/netstandard2.1/OrganizedCrimeApp.Shared.pdb

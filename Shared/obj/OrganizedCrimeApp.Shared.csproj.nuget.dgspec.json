@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/carebear/Projects/OrganizedCrimeApp/Shared/OrganizedCrimeApp.Shared.csproj": {}
+  },
+  "projects": {
+    "/home/carebear/Projects/OrganizedCrimeApp/Shared/OrganizedCrimeApp.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/carebear/Projects/OrganizedCrimeApp/Shared/OrganizedCrimeApp.Shared.csproj",
+        "projectName": "OrganizedCrimeApp.Shared",
+        "projectPath": "/home/carebear/Projects/OrganizedCrimeApp/Shared/OrganizedCrimeApp.Shared.csproj",
+        "packagesPath": "/home/carebear/.nuget/packages/",
+        "outputPath": "/home/carebear/Projects/OrganizedCrimeApp/Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/carebear/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "/home/carebear/.nuget/packages/microsoft.visualstudio.web.codegeneration.design": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.403/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
